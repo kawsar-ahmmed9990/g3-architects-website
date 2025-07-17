@@ -78,7 +78,7 @@
     margin-bottom: 30px;
 }
 
-/* our features related styles */
+/* teams related styles */
 .our-features-title-part{
     color: #FF900E;
 }
@@ -102,7 +102,117 @@
     font-weight: 600;
     font-size: 2.5rem;
 }
+/* features related section */
+.features{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    gap: 100px;
+}
+#feature-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    padding: 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 10px;
+}
+.feature-section-title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0px;
+}
+.feature-architect img{
+    max-width: 600px;
+}
+#experience-badge{
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 20px 22px;
+    margin-top: -100px;
+    margin-left: -50px;
+}
+#experience-year{
+    font-weight: 700;
+    font-size: 2rem;
+}
 
+/* some facts related styles */
+.some-facts{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.some-facts p{
+    max-width: 500px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-left: 50px;
+    margin-top: 20px;
+}
+.fact-card{
+    text-align: center;
+    border: 1px solid #FF900E;
+    padding: 25px;
+    width: 150px;
+    height: 130px;
+}
+.fact-number{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0px;
+    margin-top: 5px;
+}
+.fact-name{
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0px;
+}
+
+/* sponsor related styles */
+.our-sponsors{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sponsors-info{
+    text-align: center;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 5px;
+}
+.sponsors-info p{
+    max-width: 550px;
+    margin: 0 auto;
+}
+.sponsor-companies{
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.sponsor-companies img{
+    filter: grayscale(100%)
+}
+
+/* footer section related styles */
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.footer p{
+    padding: 20px;
+    text-align: center;
+}
 /* device responsive area */
 /* small device */
 @media  screen and (max-width: 576px) {
