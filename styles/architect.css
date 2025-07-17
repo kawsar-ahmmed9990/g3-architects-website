@@ -175,6 +175,10 @@
     width: 150px;
     height: 130px;
 }
+.some-facts-title{
+    font-weight: 700;
+    font-size: 2rem;
+}
 .fact-number{
     font-weight: 600;
     font-size: 2rem;
