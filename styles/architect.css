@@ -86,7 +86,6 @@
     align-items: center;
     max-width: 1150px;
     margin: 0 auto;
-    max-height: 700px;
     margin-top: 70px;
 }
 .team-image-container{
@@ -95,16 +94,18 @@
     gap: 10px;
 }
 .our-features{
-    max-width: 400px;
-    padding: 40px;
+    max-width: 500px;
+    padding-left: 100px;
 }
 .our-features h3{
     font-weight: 600;
     font-size: 2.5rem;
 }
+
 /* features related section */
 .features{
     max-width: 1200px;
+    height: auto;
     margin: 0 auto;
     margin-top: 70px;
     gap: 100px;
@@ -112,6 +113,9 @@
 #feature-title{
     border-left: 5px solid #FF900E;
     padding-left: 20px;
+}
+.feature{
+    max-width: 500px;
 }
 .feature-card{
     padding: 10px 10px;
@@ -125,11 +129,12 @@
 }
 .feature-title{
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 0px;
 }
 .feature-architect img{
-    max-width: 600px;
+    /* max-width: 600px; */
+    width: 100%;
 }
 #experience-badge{
     padding: 10px;
@@ -155,12 +160,14 @@
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding-left: 50px;
     margin-top: 20px;
 }
 .fact-card{
     text-align: center;
     border: 1px solid #FF900E;
+    border-radius: 10px;
     padding: 25px;
     width: 150px;
     height: 130px;
@@ -213,19 +220,45 @@
     padding: 20px;
     text-align: center;
 }
+
+
 /* device responsive area */
 /* small device */
 @media  screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams
+    .teams,
+    .features,
+    .sponsor-companies
     {
         flex-direction: column;
+    }
+    .sponsor-companies{
+        justify-content: center;
+        gap: 50px;
     }
     .team-image-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .our-features{
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 0;
+        place-items: center;
+    }
+    .some-facts{
         text-align: center;
     }
+    .our-features{
+        text-align: center;
+        padding-left: 0;
+    }
+    .feature-architect img{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    #experience-badge{
+        display: none;
+    }
+
 }
