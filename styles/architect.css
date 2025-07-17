@@ -77,3 +77,45 @@
     width: 100%;
     margin-bottom: 30px;
 }
+
+/* our features related styles */
+.our-features-title-part{
+    color: #FF900E;
+}
+.teams{
+    align-items: center;
+    max-width: 1150px;
+    margin: 0 auto;
+    max-height: 700px;
+    margin-top: 70px;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.our-features{
+    max-width: 400px;
+    padding: 40px;
+}
+.our-features h3{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+/* device responsive area */
+/* small device */
+@media  screen and (max-width: 576px) {
+    .navbar,
+    .nav-links,
+    .teams
+    {
+        flex-direction: column;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        text-align: center;
+    }
+}
